@@ -125,6 +125,7 @@ li a, .dropbtn {
 }
 
 li a:hover, .dropdown:hover .dropbtn {
+    position: relative;
     background-color: rgba(214, 211, 211, 0.226);
     /* box-shadow: 4px 8px 10px 0px rgba(0,0,0,0.1); */
 
@@ -173,12 +174,14 @@ li.dropdown {
 }
 
 .content1 {
-float: left;
-width: 46%;
+    float: left;
+    width: 46%;
 }
 .text-contact1 {
     float: left;
     width: 46%;
+    padding: 0;
+    margin: 0;
     }
 
 .content2 {
@@ -247,6 +250,18 @@ h3 #content-container {
     padding-bottom: 0.5em;
 }
 
+.img-enlarge {
+    width: 100%;
+    -webkit-transition: width 0.5s, height 0.5s;
+    transition: width 0.5s, height 0.5s;
+}
+
+.img-enlarge:hover {
+    position: relative;
+    width: 200%;
+    height: 100%;
+}
+
 .products {
 
 }
@@ -312,6 +327,8 @@ h3 #content-container {
       font-size: 18px;
       font-weight: 100;
   }
+
+
   
   /* @media screen and (min-width: 60em) {
     .products {
@@ -327,11 +344,12 @@ h3 #content-container {
   } */
 
 footer {
+    border-top: 6px solid rgba(233, 83, 195, 0.267);
     font-family: IBM Plex Mono, monospace;
     font-size: 70%;
     text-align: center;
     letter-spacing: 7px;
-    padding: 10px 5px 20px;
+    padding: 0 0 10px;
     /* padding-top: 250px; */
     width: 900px;
     position: relative;
