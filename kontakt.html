@@ -32,7 +32,7 @@
             <div class="navigation">
                 <nav>
                     <ul>
-                        <li><a href="index.html" id="thispage">Rosteri Covfefe
+                        <li><a href="index.html">Rosteri Covfefe
                         </a></li>
                         <li class="dropdown"><a href="" class="dropbtn">Butik<i class="fas fa-angle-down"></i></a>
                             <div class="dropdown-content">
@@ -42,22 +42,30 @@
                             </div>
                         </li>
                         <li><a href="rosteri.html">Rosteri</a></li>
-                        <li><a href="kontakt.html">Kontakt</a></li>
+                        <li><a href="kontakt.html" id="thispage">Kontakt</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     <main>
     <div id="content-container">
-        <div class="content1">
-            <h1 class="title1">Välkommen</h1>
-            <h3>Till smålands enda rosteri och Café</h3>
-            <p>Till oss kommer du för en kopp kaffe på plats, på vägen, eller varför inte lyxa till det hemma med våra egenrostade bönor?</p>
-            <p>Självklart maler vi dem åt dig om så önskas!</p>
-            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quam alias in. Mollitia nisi natus dolores laborum, autem nihil in odio aspernatur iure? Voluptate temporibus minus eius reiciendis excepturi laudantium?</p> -->
-        </div>
-        <div class="content2">
-            <div id="content-image1"></div>
+        <div class="text-contact1">
+          <p><h3>Lägg en beställning här eller ställ dina frågor, så kontaktar vi dig!</h3></p>
+          <form method="post" action="">
+            <p><b>Namn</b><br>
+            <input type="text" name="fran_namn" value="Ditt fullständiga namn" size="30" maxlength="90"></p>
+            <p><b>E-post</b><br>
+            <input type="text" name="fran_epost" value="Din E-post" size="30" maxlength="90"></p>
+            <p><b>Rubrik</b><br>
+            <input type="text" name="amne" size="30" maxlength="60" value=""></p>
+            <p><b>Meddelande</b><br>
+            <textarea name="text" rows="5" cols="30"></textarea></p>
+            <p><input type="submit" name="Skicka" value="Skicka">
+            <input type="hidden" name="url"></p>
+            </form>
+                    </div>
+        <div class="image3">
+            <!-- <div id="content-image1"></div> -->
         </div>
     </div>
     </main>
